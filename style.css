@@ -88,7 +88,7 @@ a:hover{
 /* Requirement 4 code here*/
 
 a:focus{
-  border-style: 2px solid;
+  border: 2px solid;
 }
 
 .container{
@@ -101,6 +101,8 @@ a:focus{
 /* Remainder of requirements here: */
 
 header{
+  background-image: url(../images/header.jpg);
+  background-repeat: no-repeat;
   background-attachment: fixed; /* Parallax effect */
   background-position: center; /* Parallax effect */
   background-size: cover; /* Parallax effect */
@@ -108,13 +110,12 @@ header{
   height: 400px; /* Parallax effect */
   grid-column: 1/ span 3;
   grid-row: 1/ span 1;
-  background-image: url(../images/header.jpg);
-  background-repeat: no-repeat;
 }
 
 
 .about-image{
   grid-column: 1/ span 3;
+  grid-column-end: main-end;
   max-height: 700px;
   overflow: hidden;
   grid-row: 2/ span 1;
@@ -122,11 +123,13 @@ header{
 
 .about{
   grid-column: 2/ span 1;
+  grid-column-end: main-end;
   grid-row: 2/ span 1;
  }
 
 .method-image{
   grid-column: 1/ span 3;
+  grid-column-end: 3;
   max-height: 700px;
   overflow: hidden;
   grid-row: 3/ span 1;
@@ -134,11 +137,13 @@ header{
 
 .method{
   grid-column: 2/ span 1;
+  grid-column-end: 3;
   grid-row: 3/ span 1;
 }
 
 .clients-image{
   grid-column: 1/ span 3;
+  grid-column-end: main-end;
   max-height: 700px;
   overflow: hidden;
   grid-row: 4/ span 1;
@@ -146,11 +151,13 @@ header{
 
 .clients{
   grid-column: 2/ span 1;
+  grid-column-end: main-end;
   grid-row: 4/ span 1;
 }
 
 .contact-image{
   grid-column: 1/ span 3;
+  grid-column-end: 3;
   max-height: 700px;
   overflow: hidden;
   grid-row: 5/ span 1;
@@ -158,6 +165,7 @@ header{
 
 .contact{
   grid-column: 2/ span 1;
+  grid-column-end: 3;
   grid-row: 5/ span 1;
 }
 
