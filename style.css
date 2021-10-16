@@ -75,8 +75,8 @@ a:hover{
   -webkit-transition: top 1s ease-out;
   transition: top 1s ease-out;
   z-index: 1;
-  position: absolute;
-  top: 40px;
+  position: relative;
+  top: -40px;
 }
 
 /* Requirement 3b code here*/
@@ -187,35 +187,35 @@ header{
 
 
   .about-image{
-  grid-column: 2/ span  4;
+  grid-column: 2/4;
   }
 
   .about{
-    grid-column: 3/ span 5;
+    grid-column: 3/5;
   }
 
   .method-image{
-    grid-column: 3/ span 5;
+    grid-column: 3/5;
   }
 
   .method{
-    grid-column: 2/ span  4;
+    grid-column: 2/4;
   }
 
   .clients-image{
-    grid-column: 2/ span  4;
+    grid-column: 2/4;
   }
 
   .clients{
-    grid-column: 3/ span 5;
+    grid-column: 3/5;
   }
 
   .contact-image{
-     grid-column: 3/ span 5;
+     grid-column: 3/5;
   }
 
   .contact{
-      grid-column: 2/ span  4;
+      grid-column: 2/4;
   }
 
 }
